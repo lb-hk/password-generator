@@ -1,0 +1,144 @@
+@font-face {
+    font-family: "font-1";
+    src: url(./assets/IBMPlexMono-Medium.ttf);
+}
+
+body {
+    font-family: "font-1", sans-serif;
+    background: rgb(10,6,74);
+    background: linear-gradient(90deg, rgb(61, 62, 74) 0%, rgb(108, 108, 120) 35%, rgb(52, 80, 87) 100%);
+    place-content: center;
+    height: 100vh;
+}
+
+h2{
+    font-family: "font-1", sans-serif;
+    text-align: left;
+    padding-left: 35px;
+    font-size: 2.5rem;
+    color: black;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    position: relative;
+    top: 0;
+    width: 100%;
+    height: 30;
+}
+
+h4{
+    font-family: "font-1", sans-serif;
+    text-align: left;
+    color: black;
+    margin-left: 35px;
+    margin-right: 35px;
+    font-size: 1.3rem;
+}
+
+form{
+    color: blackwhite;
+    margin-top: 60px;
+    font-size: 1.2rem;
+}
+
+input {
+    margin: 5px;
+    width: 260px;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding-left: 40px;
+}
+
+input[name=letters] {
+    resize : none;
+    font-family: "font-1", sans-serif;
+    font-size: 1.2rem;
+    text-align: center;
+    width : 780px;
+    height: 27px;
+    border-radius: 10px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 1px;
+    margin-right: 40px;
+
+   }
+
+input[name=lenSeq] {
+    resize : none;
+    font-family: "font-1", sans-serif;
+    font-size: 1.2rem;
+    text-align: center;
+    width : 40px;
+    height: 27px;
+    border-radius: 10px;
+    padding-top: 4px;
+    padding-left: 1px;
+    margin-right: 50px;
+   }
+
+input[name=numSeq] {
+    display: none;
+    resize : none;
+    font-family: "font-1", sans-serif;
+    font-size: 1.3rem;
+    text-align: center;
+    width : 30px;
+    height: 27px;
+    border-radius: 10px;
+    padding-top: 4px;
+    padding-left: 1px;
+    margin-right: 50px;
+   }
+
+textarea{
+    resize : none;
+    font-family: "font-1", sans-serif;
+    font-size: 1.2rem;
+    text-align: center;
+    width : 235px;
+    height: 27px;
+    border-radius: 10px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 12px;
+    margin-top: 30px;
+   }
+
+input[type="button"] {
+    cursor: pointer;
+    background: black;
+    color: white;
+    transition: 0.3s;
+    font-family: "font-1", sans-serif;
+    font-size: 1rem;
+    text-align: center;
+    width : 150px;
+    height: 30px;
+    border-radius: 10px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 4px;
+    margin-top: 10px;
+    margin-bottom: 70px;
+  }
+  
+input[type="button"]:hover {
+    background: white;
+    color: black;
+    transform: scale(1);
+  }
+
+footer{
+    font-family: "font-1", sans-serif;
+    text-transform: lowercase;
+    letter-spacing: 2px;
+    text-align: center;
+    font-size: 1rem;
+    color: black;
+    position: absolute;
+    bottom: 0;
+    width:100%;
+    margin-bottom: 7%;
+    height:15px;
+    margin-top: 40px;
+}
