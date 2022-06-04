@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BABOTI pass</title>
+
+    <link rel="stylesheet" href="./style.css">
+
+    <script language="JavaScript" src="random.js"></script>
+
+    <script language="JavaScript">
+  function generateRandSeq(len, letters)
+  // Assumes: len >= 0
+  // Returns: random sequence of letters, length len
+  {
+      var i, seq = "";
+      for (i = 1; i <= len; i = i + 1) {
+          seq += randomChar(letters);
+      }
+      return seq;
+  }
+    </script>
+</head>
+
+<body>
+    <center>
+    <h2>(be a bodybuilder on the internet/) --password--</h2>
+
+
+    <div>
+        <h4>
+            Cet outil permet de générer de manière aléatoire un mot de passe. La robustesse du mot de passe
+            peut-être réglée avec le paramètre "longeur". Le paramètre "caractères" permet de choisir si le 
+            mot de passe doit être généré à partir de chiffres, de lettres, de caractères spéciaux ou des trois. 
+        </h4>
+    </div>
+
+    <form name="generator">
+        <table>
+            <tr>
+                <td>
+                <td><input type="text" name="numSeq" size=4 value=1>
+
+                <td>longueur :
+                <td><input type="text" name="lenSeq" size=2 value=11>
+
+                <td>caractères :
+                <td><input type="text" name="letters" size=13 value=ABCDEFGHIJKLMNOPQRSTUVXYZabcdefghijklmnopqrstuvwxyz123456789-.>
+                </table>
+            <tr>
+            
+        </table>
+
+
+        <tr>
+            <textarea class="zonetx" name="output" rows=10 cols=40 wrap value=""></textarea>
+        <tr>
+
+        <p>
+            <input type="button" value="shuffle"
+                    onclick="document.generator.output.value = '';
+                            for(i=1;i<=document.generator.numSeq.value;i=i+1) {
+                                document.generator.output.value += 
+                                        generateRandSeq(document.generator.lenSeq.value,
+                                            document.generator.letters.value) + ' ';
+                };">
+
+        <p>
+
+    </form>
+    </center>
+
+    <footer>
+        <a href="https://cssgenerator.org/" target="_blank">générer un identifiant</a> <br>
+        (lb/) tous droits réservés <br>
+        lb.862847@gmail.com
+    </footer>
+</body>
